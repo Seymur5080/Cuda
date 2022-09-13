@@ -1,0 +1,549 @@
+/* ---------------FONTS--------------- */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* ---------------ОБНУЛЕНИЕ САЙТА--------------- */
+*, *::before, ::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* ---------------GENERAL CSS STYLE--------------- */
+:root {
+   --tit: "Titillium Web";
+}
+
+.general__ul li {
+   display: inline-block;
+}
+
+.general__ul li a {
+   padding: 6px 24px;
+
+   font: 400 16px var(--tit);
+   text-decoration: none;
+   line-height: 18px;
+   color: #ffffff;
+
+   transition: all 0.5s ease;
+}
+
+.a__active {
+   background-color: #643a79;
+   border-radius: 5px;
+}
+
+.general__ul li a:hover {
+   background-color: #643a79;
+   border-radius: 5px;
+}
+
+.general__ul li .a__active:active,
+.general__ul li a:active {
+   background-color: #4e2c5f;
+}
+
+.general__btn {
+   display: block;
+   margin: 0 auto;
+   padding: 23px 90px;
+
+   font: 600 18px var(--tit);
+   letter-spacing: 0px;
+   line-height: 26px;
+   color: #ffffff;
+
+   border-radius: 4px;
+   border: none;
+
+   cursor: pointer;
+} 
+
+.general__h2 {
+   padding: 120px 0 20px 0;
+
+   font: 700 40px var(--tit);
+   text-align: center;
+   letter-spacing: 4px;
+   line-height: 30px;
+}
+
+.general__hr {
+   width: 87px;
+   height: 4px;
+   margin: 0 auto;
+
+   border: none;
+}
+
+.general__p {
+   padding-top: 25px;
+   margin: 0 auto;
+
+   font: 400 18px var(--tit);
+   text-align: center;
+   line-height: 26px;
+}
+
+.general__divs {
+   display: inline-block;
+   width: 260px;
+   padding: 0 30px 130px 30px;
+   margin-top: 85px;
+}
+
+.general__divs img {
+   display: block;
+   margin: 0 auto;
+}
+
+.general__divs h2 {
+   padding-top: 60px;
+
+   font: 700 24px var(--tit);
+   text-align: center;
+   line-height: 18px;
+}
+
+.general__divs p {
+   padding-top: 30px;
+
+   font: 300 16px var(--tit);
+   text-align: center;
+   line-height: 24px;
+}
+
+/* ---------------HEADER CSS STYLE--------------- */
+.header {
+   background-color: #87509c;
+}
+
+.container {
+   max-width: 1100px;
+   margin: 0 auto;
+}
+
+nav {
+   padding-top: 60px;
+}
+
+.div__flex {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__body{
+   padding-bottom: 145px;
+}
+
+.header__body .h1__style {
+   font: 700 42px var(--tit);
+   line-height: 49px;
+   text-align: center;
+   color: #f7f3ea;
+   margin-top: 145px;
+}
+
+.header__body button {
+   margin-top: 60px;
+
+   background-color: #eb7d4b;
+   border-bottom: 4px solid #c86a40;
+
+   transition: all 0.5s ease;
+}
+
+.header__body button:hover {
+   background-color: #c5693f;
+   border-bottom: 4px solid #af5d37;
+}
+
+.header__body button:active {
+   background-color: #af5e39;
+   border-bottom: 4px solid #9c5330;
+}
+
+/* ---------------BODY CSS STYLE--------------- */
+/* ---------------ONE-PAGE CSS STYLE--------------- */
+.one__page {
+   background-color: #17c2a4;
+}
+
+.one__page h2,
+.one__page p {
+   color: #fff;
+}
+
+.one__page hr {
+   background-color: #14a58c;
+}
+
+
+/* ---------------TWO-PAGE CSS STYLE--------------- */
+.two__page {
+   background-color: #e7f1f8;
+}
+
+.two__page h2,
+.two__page p {
+   color: #3c4761;
+}
+
+.two__page hr {
+   background-color: #c8d9e5;
+}
+
+.two__page .general__divs a {
+   display: block;
+   padding-top: 15px;
+
+   font: 400 16px var(--tit);
+   text-decoration: none;
+   text-align: center;
+   line-height: 18px;
+   color: #30bae7;
+
+   transition: all 0.5s ease;
+}
+
+.two__page .general__divs a:hover {
+   color: #258aac;
+}
+
+.two__page .general__divs a:active {
+   color: #0a556e;
+}
+
+.social__flex {
+   display: flex;
+   justify-content: center;
+
+   margin-top: 30px;
+}
+
+.social {
+   display: inline-block;
+   margin: 0 10px 0 10px;
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
+
+   position: relative;
+   background-color: #bdd1df;
+
+   cursor: pointer;
+   transition: all 0.5s ease;
+}
+
+
+.social i {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+
+   font-size: 15px;
+   color: white;
+
+   transform: translate(-50%, -50%);
+} 
+
+.social:hover {
+   background-color: #30bae7;
+}
+
+.social:active {
+   background-color: #258aac;
+}
+
+/* ---------------THREE-PAGE CSS STYLE--------------- */
+.three__page hr {
+   background-color: #dfe8ed;
+}
+
+/* ---------------FOUR-PAGE CSS STYLE--------------- */
+.four__page {
+   padding-bottom: 110px;
+   background-color: #ffdd99;
+}
+
+.four__page hr {
+   background-color: #e5c37f;
+}
+
+.four__page__nav {
+   padding: 45px 0 65px 0;
+   text-align: center;
+}
+
+.four__page .general__ul li a {
+   padding: 6px 25px;
+   margin-left: 5px;
+
+   font-size: 18px;
+   line-height: 20px;
+   color: #393939;
+
+   border-radius: 5px;
+   transition: all 0.5s ease;
+}
+
+.four__page .a__active {
+   background-color: #fff;
+}
+
+.four__page .a__active:hover,
+.four__page .general__ul .a__bg:hover {
+   background-color: #fff;
+}
+
+.four__page .a__active:active,
+.four__page .general__ul .a__bg:active {
+   background-color: rgb(209, 209, 209);
+}
+
+.four__page .general__ul .a__bg {
+   background-color: #ebc985;
+}
+
+.nout__img {
+   display: inline-block;
+   padding: 65px 20px;
+}
+
+.four__page button {
+   padding: 23px 65px;
+
+   border: none;
+   background-color: #17c2a4;
+   border-bottom: 4px solid #14a58c;
+
+   transition: all 0.5s ease;
+}
+
+.four__page button:hover {
+   background-color: #13a389;
+   border-bottom: 4px solid #108b77;
+}
+
+.four__page button:active {
+   background-color: #11927a;
+   border-bottom: 4px solid #0d7765;
+}
+
+/* ---------------FIVE-PAGE CSS STYLE--------------- */
+.five__page {
+   background-color: #d74680;
+}
+
+.five__page .general__h2,
+.five__page .general__p {
+   color: #fff;
+}
+
+.five__page .general__hr {
+   background-color: #b73c6d;
+}
+
+.five__flex {
+   display: flex;
+   justify-content: space-between;
+   padding: 70px 0 130px 0;
+}
+
+.one__flex {
+   display: flex;
+   justify-content: space-around;
+   width: 50%;
+   text-align: start;
+}
+
+.one__flex__padding {
+   padding-bottom: 150px;
+}
+
+.five__page .five__flex p {
+   font: 400 21px var(--tit);
+   font-style: italic;
+   letter-spacing: 0px;
+   line-height: 31px;
+   color: #fff;
+}
+
+.five__page .five__flex h2 {
+   padding-top: 30px;
+
+   font: 700 24px var(--tit);
+   letter-spacing: 0px;
+   line-height: 26px;
+   color: #ffffff;
+}
+
+.five__page .five__flex a {
+   font: 400 18px var(--tit);
+   text-decoration: none;
+   letter-spacing: 0px;
+   line-height: 26px;
+   color: #ffdd99;
+
+   transition: all 0.5s ease;
+}
+
+.five__page .five__flex a:hover {
+   color: #dfc187;
+}
+
+.five__page .five__flex a:active  {
+   color: #c9ae78;
+}
+
+/* ---------------SIX-PAGE CSS STYLE--------------- */
+.six__page {
+   padding-bottom: 115px;
+   background-color: #3c5499;
+
+   /* position: relative; */
+}
+
+.six__page .general__h2,
+.six__page .general__p {
+   color: #fff;
+}
+
+.six__page .general__hr {
+   background-color: #273a71;
+}
+
+.input__flex {
+   display: flex;
+   justify-content: space-around;
+   margin: 75px 0 25px 0;
+   padding: 0 120px;
+}
+
+.input__flex input {
+   display: inline-block;
+   width: 390px;
+   height: 50px;
+   padding-left: 20px;
+
+   font: 400 18px var(--tit);
+   line-height: 18px;
+   color: #fff;
+
+   background-color: #273a71;
+   border: none;
+   border-radius: 4px;
+   outline: none;
+}
+
+.input__flex input::placeholder,
+.textarea__style textarea::placeholder {
+   color: #fff;
+}
+
+.textarea__style {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 60px;
+}
+
+.textarea__style textarea {
+   width: 820px;
+   height: 200px;
+   padding: 25px 0 0 20px;
+   margin: 0 auto;
+
+   font: 400 18px var(--tit);
+   line-height: 18px;
+   color: #fff;
+
+   background-color: #273a71;
+   border: none;
+   border-radius: 4px;
+   outline: none;
+}
+
+.six__page button {
+   padding: 20px 85px;
+
+   background-color: #30bae7;
+   border: none;
+   border-bottom: 4px solid #299ec5;
+
+   transition: all 0.5s ease;
+}
+
+.six__page button:hover {
+   background-color: #28a2ca;
+   border-bottom: 4px solid #2386a7;
+}
+
+.six__page button:active {
+   background-color: #238db1;
+   border-bottom: 4px solid #1e7491;
+}
+
+/* .span__one {
+   color: red;
+
+   position: absolute;
+   left: 372px;
+   bottom: 487px;
+}
+
+.span__two {
+   color: red;
+
+   position: absolute;
+   left: 806px;
+   bottom: 487px;
+}
+
+.span__three {
+   color: red;
+
+   position: absolute;
+   left: 394px;
+   bottom: 403px;
+} */
+
+/* ---------------FOOTER CSS STYLE--------------- */
+.footer {
+   background-color: #344b8e;
+}
+
+.footer ul li {
+   display: inline-block;
+   padding: 0 30px;
+   
+}
+
+.footer ul li a {
+   display: inline-block;
+   padding: 45px 0;
+
+   font: 600 24px var(--tit);
+   text-align: center;
+   text-decoration: none;
+   letter-spacing: 0px;
+   line-height: 30px;
+   color: #ffffff;
+
+   transition: all 0.5s ease;
+}
+
+.footer ul li a:hover {
+   color: #30bae7;
+}
+
+.footer ul li a.active {
+   color: #30bae7;
+}
+
+.footer ul li a:active,
+.footer ul li a.active:active {
+   color: #2791b4;
+}
+
+
